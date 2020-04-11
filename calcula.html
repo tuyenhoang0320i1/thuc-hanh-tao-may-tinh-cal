@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <h2>Caculator</h2>
+    <br>
+    <input id="one"type="number"name="number">
+    <input id="two"type="number"name="number">
+    <br><br>
+    Kết quả:
+    <input id="result" type="text"name="number">
+    <br><br>
+    <input type="button" value="Addition(+)" onclick="add();">
+    <input type="button" value="Subtraction(-)" onclick="sub();">
+    <input type="button" value="Multiplication(*)" onclick="mul();">
+    <input type="button" value="Division(/)" onclick="div();">
+    <script>
+        let one = document.getElementById("one");
+        let two = document.getElementById("two");
+        let resultDisplay=document.getElementById("result");
+        function add() {
+            let result = parseFloat(one.value) + Number(two.value);
+            resultDisplay.value=result;
+        }
+
+        function sub() {
+            let result = parseFloat(one.value) - Number(two.value);
+            resultDisplay.value=result;
+        }
+
+        function mul() {
+            let result = parseFloat(one.value) * Number(two.value);
+            resultDisplay.value=result;
+        }
+        function div() {
+            let result = parseFloat(one.value) / Number(two.value);
+            resultDisplay.value=result;
+        }
+
+    </script>
+</form>
+
+</body>
+</html>
